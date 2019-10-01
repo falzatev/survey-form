@@ -1,7 +1,43 @@
-body {
-    background: hsl(197, 81%, 71%)
-}
+/* body {
+    
+} */
 
 #title {
     text-align: center;
 }
+
+body {
+    /* background: hsl(197, 81%, 71%); */
+    background: #32b2cd;
+    font-family: "sans-serif", "segoe ui", monospace, serif;
+  }
+  input {
+    border-radius: 5px;
+    padding: 4px;
+    width: 20%;
+  }
+  #Form-outer {
+    background: white;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+  }
+  .divCont {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  .divEle {
+    display: inline;
+  }
+  
+  .divEle label {
+    text-align: right;
+  }
+  .divEle label::before {
+    content: "*";
+    color: red;
+  }
+  .divEle input {
+    text-align: left;
+  }

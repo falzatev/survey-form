@@ -11,15 +11,33 @@
     <h1 id="title">Cuentanos tus impresiones</h1>
     <div id="Form-outer">
         <p id="description">Déjanos saber como podemos mejorar</p>
-
-        <form action="#" method="get" id="survey-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="number">Age:</label>
-            <input type="number" id="number" required min="1" max="120">
+        <form action="#" id="survey-form">
+          <div class="divCont">
+            <div class="divEle">
+              <label for="name">Name:</label>
+            </div>
+            <div class="divEle">
+              <input type="text" id="name" required>
+            </div>
+          </div>
+          <div class="divCont">
+            <div class="divEle">
+              <label for="email">Email:</label>        
+            </div>
+            <div class="divEle">
+              <input type="email" id="email" required>
+            </div>
+          </div>
+          <div class="divCont">
+            <div class="divEle">
+              <label for="number">Age:</label>        
+            </div>
+            <div class="divEle">
+              <input type="number" id="number" required min="1" max="120">
+            </div> 
+          </div>   
+          
         </form>
-    </div>
+      </div>
 </body>
 </html>
