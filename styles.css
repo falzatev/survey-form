@@ -75,8 +75,14 @@
   #btnSubmit {
     margin:20px 0 20px 40%;
   }
-  #submit:hover {
-    box-shadow: 4px -4px 5px -1px rgba(92,93,107,1);
-    background: #15629288;
-    
+  #submit:hover {    
+    background: #11161a;
+  }
+  #comment {
+    margin-left: 15px;
+  }
+  @media (max-width: 700px) {
+    .inputF, #dropdown, #comment {
+      width: 13em;
+    }
   }
