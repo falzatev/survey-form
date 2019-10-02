@@ -1,43 +1,82 @@
-/* body {
-    
-} */
-
-#title {
+  #title {
     text-align: center;
-}
-
-body {
-    /* background: hsl(197, 81%, 71%); */
-    background: #32b2cd;
-    font-family: "sans-serif", "segoe ui", monospace, serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
   }
-  input {
+
+  body {
+    /* background: hsl(197, 81%, 71%); */
+    background: url(https://thewallpaper.co//wp-content/uploads/2019/08//windows-art-original-abstract-cities-building-architecture-fantasy-city-artistic-artwork-background-images-jpg.jpg);
+    font-family: "sans-serif", "segoe ui", monospace, serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* [type='radio'] {
+    justify-self: start;
+  } */
+  .inputF, #dropdown {
     border-radius: 5px;
-    padding: 4px;
-    width: 20%;
+    padding: 5px;
+    width: 20em;
+    margin-left: 15px;
+    border: 1px solid #c0c0c0;
   }
   #Form-outer {
     background: white;
     padding: 20px;
-    width: 70%;
+    width: 75%;
     margin: auto;
+    border-radius: 5px;
+  }
+  #Form-outer p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
   }
   .divCont {
     display: block;
+    /* grid-template-columns: 1fr 1.2fr; */
     padding: 10px;
     text-align: center;
   }
-  .divEle {
-    display: inline;
-  }
-  
-  .divEle label {
+  .labels {
+    display: inline-block;
+    width: 40%;
     text-align: right;
+    padding: 5px;
+    vertical-align: top;
   }
-  .divEle label::before {
+  .divRightEle{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    padding: 5px;
+    vertical-align: top;
+  }
+  .labels label::before {
     content: "*";
     color: red;
   }
-  .divEle input {
-    text-align: left;
+  .radio, .checkbox{
+    margin-left: 15px;
+  }
+  #submit {
+    width: 110px;
+    height: 40px;
+    background: #59ace0;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #59ace0;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  #btnSubmit {
+    margin:20px 0 20px 40%;
+  }
+  #submit:hover {
+    box-shadow: 4px -4px 5px -1px rgba(92,93,107,1);
+    background: #15629288;
+    
   }

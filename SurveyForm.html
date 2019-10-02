@@ -9,35 +9,131 @@
 </head>
 <body>
     <h1 id="title">Cuentanos tus impresiones</h1>
-    <div id="Form-outer">
+    <main id="Form-outer">
         <p id="description">Déjanos saber como podemos mejorar</p>
         <form action="#" id="survey-form">
           <div class="divCont">
-            <div class="divEle">
-              <label for="name">Name:</label>
+            <div class="labels">
+              <label for="name" id="name-label">Name:</label>
             </div>
-            <div class="divEle">
-              <input type="text" id="name" required>
-            </div>
-          </div>
-          <div class="divCont">
-            <div class="divEle">
-              <label for="email">Email:</label>        
-            </div>
-            <div class="divEle">
-              <input type="email" id="email" required>
+            <div class="divRightEle">
+              <input type="text" id="name" placeholder="Enter your name" class="inputF" required>
             </div>
           </div>
           <div class="divCont">
-            <div class="divEle">
-              <label for="number">Age:</label>        
+            <div class="labels">
+              <label for="email" id="email-label">Email:</label>        
             </div>
-            <div class="divEle">
-              <input type="number" id="number" required min="1" max="120">
+            <div class="divRightEle">
+              <input type="email" id="email" placeholder="Enter your email" class="inputF" required>
+            </div>
+          </div>
+          <div class="divCont">
+            <div class="labels">
+              <label for="number" id="number-label" >Age:</label>        
+            </div>
+            <div class="divRightEle">
+              <input type="number" id="number" placeholder="Age" class="inputF" required min="1" max="120">
             </div> 
-          </div>   
+          </div>
           
+          <div class="divCont">
+            <div class="labels">
+              <label for="dropdown">
+                Which option best describes your current role?
+              </label>
+            </div>
+            <div class="divRightEle">
+              <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="notSay">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="divCont">
+            <div class="labels">
+              <label for="">
+                How likely is that you would recommend freeCodeCamp to a friend?
+              </label>
+            </div>
+            <div class="divRightEle">
+              <div class="radio">
+                <label for="definitely">
+                  <input id="definitely" type="radio" name="recomended" value="1">
+                  Definitely
+                </label>
+              </div>
+              <div class="radio">
+                <label for="maybe">
+                  <input id="maybe" type="radio" name="recomended" value="2">
+                  Maybe
+                </label>
+              </div>
+              <div class="radio">
+                <label for="notSure">
+                  <input id="notSure" type="radio" name="recomended" value="3">
+                  Not Sure
+                </label>
+              </div>              
+            </div>
+          </div>
+
+          <div class="divCont">
+            <div class="labels">
+              <label for="">
+                Things that should be improved in the future (Check all that apply):
+              </label>
+            </div>
+            <div class="divRightEle">
+              <div class="checkbox">
+                <label for="Front-end">
+                  <input id="Front-end" type="checkbox" name="projects" value="1">
+                  Front-end Projects
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="Back-end">
+                  <input id="Back-end" type="checkbox" name="projects" value="2">
+                  Back-end Projects
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="Data-Visualization">
+                  <input id="Data-Visualization" type="checkbox" name="projects" value="3">
+                  Data Visualization
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label for="Challenges">
+                  <input id="Challenges" type="checkbox" name="projects" value="3">
+                  Challenges
+                </label>
+              </div>  
+              <div class="checkbox">
+                <label for="Open-Source-Community">
+                  <input id="Open-Source-Community" type="checkbox" name="projects" value="3">
+                  Open Source Community
+                </label>
+              </div>            
+            </div>
+          </div>
+          <div class="divCont">
+            <div class="labels">
+              <label for="">
+                Any Comments or Suggestions?
+              </label>
+            </div>
+            <div class="divRightEle">
+              <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+          <div id="btnSubmit">
+            <input type="submit" id="submit" value="Submit">
+          </div>
         </form>
-      </div>
+    </main>
 </body>
 </html>
